@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimMania</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <section class="header">
+        <nav>
+            <a href="https://www.instagram.com/attackontitan/?hl=en"><img src="img/logo8.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x" onclick="hidMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="https://www.animenewsnetwork.com/">ANIME-NEWS</a></li>
+                    <li><a href="https://animeindia.in/">ANIME-INDIA</a></li>
+
+                </ul>
+
+            </div>
+            <i class="bi bi-list" id="ico" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <p>
+                This website is basically about Anime Rankings, Websites to watch animes,<br>some Anime wallpapers and
+                many
+                more.
+                This is my first time creating a website and<br>created a website related to anime because I am a
+                hardcore Otaku who loves anime.<br>
+                To know more about anime and recommendations, dm me on my socials. Thanks.
+
+            </p>
+            <br>
+            <h1 id="anim">Animes are not Cartoons.
+                <br>
+                <br>
+                tatakae.
+            </h1>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <section class="footer">
+        <h4>MY SOCIALS</h4>
+        <p>Here are my socials if you would like to connect with me <i class="bi bi-suit-heart-fill"></i></p>
+        <div class="icons">
+            <a href="https://www.instagram.com/rishabh_naruto/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/rishabh.raj.986/"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/rishabh_naruto"><i class="bi bi-twitter"></i></a>
+        </div>
+
+    </section>
+
+
+
+
+    <!--SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+
+
+        </script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hidMenu() {
+            navLinks.style.right = "-200px";
+
+        }
+    </script>
+
+</body>
+
+</html>

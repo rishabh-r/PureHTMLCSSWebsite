@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/wall7.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box {
+
+    text-align: center;
+    padding-top: 120px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#anim {
+    color: #f44336;
+}
+
+
+
+nav {
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 140px;
+    height: 105px;
+    border: 1px solid rgb(49, 44, 44);
+    border-radius: 50% 50% 50% 50%;
+}
+
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+
+}
+
+.nav-links ul li a {
+    color: rgb(251, 222, 7);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    background-color: #f44336;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.top {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.top h1 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.top p {
+    font-size: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.anime-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.anime-col img {
+    width: 280px;
+    height: 200px;
+}
+
+.layer {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background-color: rgba(250, 127, 5, 0.7);
+
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header2 {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/wall6.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#head {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: #fff;
+    margin-top: 9px;
+}
+
+.header2 h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.row3 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.watch-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.watch-col img {
+    width: 280px;
+    height: 200px;
+}
+
+.watch-col a:hover {
+    color: red;
+}
+
+.layer2 {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer2:hover {
+    background-color: rgba(5, 127, 250, 0.7);
+
+}
+
+.layer2 a {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer2:hover a {
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.footer {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.footer h4 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.footer p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.bi {
+    padding-right: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.footer {
+    padding-bottom: 15px;
+}
+
+@media(max-width: 768px) {
+    .watch-col img {
+        width: 200px;
+        height: 150px;
+
+    }
+
+    .header2 {
+        padding-bottom: 20px;
+        min-height: 20vh;
+    }
+
+    .anime-col img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .header {
+        min-height: 70vh;
+    }
+}
+
+nav .bi {
+    display: none;
+}
+
+@media(max-width:500px) {
+    .anime-col img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .layer h3 {
+        font-size: 8px;
+    }
+
+    .layer2 a {
+        font-size: 12px;
+    }
+
+    #ico {
+        font-size: 26px;
+    }
+
+    nav .bi {
+        display: block;
+        color: rgb(251, 222, 7);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .watch-col img {
+        width: 100px;
+        height: 80px;
+    }
+
+    #head {
+        font-size: 25px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        height: 78.3vh;
+        width: 200px;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/wall6.png);
+        text-align: left;
+        z-index: 2;
+        background-size: cover;
+        transition: 1s;
+    }
+
+
+}
+
+@media(max-width:500px) {
+    .text-box {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 60px;
+    }
+}
